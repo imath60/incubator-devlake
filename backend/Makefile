@@ -73,8 +73,8 @@ debug: build-plugin-debug
 
 mock:
 	rm -rf mocks
-	mockery --recursive --keeptree --dir=./core --output=./mocks/core --unroll-variadic=false --name='.*'
-	mockery --recursive --keeptree --dir=./helpers --output=./mocks/helpers --unroll-variadic=false --name='.*'
+	mockery --recursive --keeptree --dir=./core --output=./mocks/core --name='.*'
+	mockery --recursive --keeptree --dir=./helpers --output=./mocks/helpers --name='.*'
 
 test: unit-test e2e-test
 
